@@ -12,6 +12,9 @@ def add_item(objeto):
 def tiene_obj(objeto):
     return objeto in Inventario
 
+def tiene_todos(*objetos):
+    return all(obj in Inventario for obj in objetos)
+
 def mostrar_inv():
     print("\n🎒 Tu Inventario:")
     if not Inventario:

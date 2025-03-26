@@ -1,22 +1,23 @@
 import stuff as stf
 import time
 import arte
+import eventos as ev
 
 
 
 print(arte.treasure_chest)
 print("Bienvenido a Treasure island!")
 print("Tu misión es encontrar el tesoro que se oculta en el fondo de la isla.")
-#time.sleep(5)
+time.sleep(5)
 print("Tendrás que superar las diferentes pruebas para llegar a dicho tesoro. Empecemos." + "\n" * 5)
-#time.sleep(5)
+time.sleep(5)
 
 jugando = True
 print(arte.boat)
 
 
 print("Te has cruzado con una tormenta y tu barco se ha hecho pedazos. Terminas arrojado en una isla desierta.")
-#time.sleep(6)
+time.sleep(6)
 print("Logras ver palmeras, los restos de lo que antes era tu barco y un sendero que lleva a la selva")
 
 while jugando:
@@ -40,20 +41,20 @@ while jugando:
     print("Investigas el barco...\n")
     time.sleep(2)
     stf.loot("Cuchillo Viejo","Brújula Oxidada")
+    time.sleep(3)
+#     if stf.tiene_todos("Cuchillo Viejo", "Brújula Oxidada"):
+
+
   
-  elif ch1 == 4:
-    stf.mostrar_inv()
+# `   elif ch1 == 4:
+#      stf.menu_inventario()
+# `
 
 
 
 
 
+  # print("Vas caminando y te encuentras con una intersección de 3 caminos.")
+  # print(arte.hall)
 
-
-
-
-
-  print("Vas caminando y te encuentras con una intersección de 3 caminos.")
-  print(arte.hall)
-
-  caminos = int(input("Por cual continúas? (1:Izquierda // 2:Centro // 3:Derecha )"))
+  # caminos = int(input("Por cual continúas? (1:Izquierda // 2:Centro // 3:Derecha )"))
